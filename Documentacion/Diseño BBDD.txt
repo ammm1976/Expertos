@@ -1,0 +1,80 @@
+Tabla Personas:
+  Id_Persona:
+  Fecha_alta:
+  Nombre:
+  Apellidos:
+  Plantilla/Externo:
+  Horas_formacion_especialidad:
+  Horas_formacion_no_especialidad:
+  Horas_aula_virtual:
+  Herramientas_aula_virtual:
+  Horas_herramientas_aula_virtual:
+  CV:
+  Contacto:
+  LinkedIn:
+
+Tabla Relaciones_ThePower:
+  Tipo_relacion:
+
+Paises:
+  Pais:
+
+Ciudades:
+  Ciudad:
+
+Universidades:
+  Nombre:
+
+Especialidades:
+  Nombre:
+
+Titulaciones_Universitarias:
+  Bolonia:
+  Nombre:
+  
+Titulaciones_Complementarias:
+  Nombre:
+
+Masters
+  Nombre:
+
+Doctorados:
+  Nombre:
+
+Ofertas:
+  Oferta:
+
+
+Algunas de estas tablas tendrían mas columnas, para enlazar unas con otras.
+Además de las relaciones entre las tablas, surgirían más tablas:
+
+
+Universidades_Rel_Doctorados:
+  Universidad:
+  Doctorado:
+
+Universidades_Rel_Titulaciones_Universitarias:
+  Universidad:
+  Titulacion_Universitaria:
+
+Universidades_Rel_Masters:
+  Universidad:
+  Master:
+
+Personas_Rel_Universidades_Rel_Titulaciones_Universitarias:
+  Id_Persona:
+  Universidad:
+  Titulacion_Universitaria:
+  Año_titulacion_universitaria
+
+Personas_Rel_Titulaciones_Complementarias:
+  Id_Persona:
+  Titulacion_Complementaria:
+
+Personas_Rel_Doctorados:
+  Id_Persona:
+  Doctorado:
+
+Personas_Rel_Masters:
+  Id_Persona:
+  Master:

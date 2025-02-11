@@ -1,0 +1,3 @@
+Consultas que muestren tablas con la información parcial relevante a la consulta. 
+Desde una consulta de buscar persona por nombre y apellidos se podrían eliminar personas.
+Un formulario que agrupe visualmente los datos en varios apartados para poder introducir nuevos datos, y editar alumnos y modificarlos.
