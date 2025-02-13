@@ -1,0 +1,114 @@
+Hola Bea:
+He estado mirando la hoja de Excel de Expertos que me mandaste ayer.
+
+He estado diseñando una base de datos y me salen las siguientes tablas y columnas:
+
+
+Personas:
+  Id_Persona:
+  Fecha_alta:
+  Nombre:
+  Apellidos:
+  Plantilla/Externo:
+  Horas_formacion_especialidad:
+  Horas_formacion_no_especialidad:
+  Horas_aula_virtual:
+  Herramientas_aula_virtual:
+  Horas_herramientas_aula_virtual:
+  CV:
+  Contacto:
+  LinkedIn:
+
+Relaciones_ThePower:
+  Tipo_relacion:
+
+Paises:
+  Pais:
+
+Ciudades:
+  Ciudad:
+
+Universidades:
+  Nombre:
+
+Especialidades:
+  Nombre:
+
+Titulaciones_Universitarias:
+  Bolonia:
+  Nombre:
+  
+Titulaciones_Complementarias:
+  Nombre:
+
+Masters
+  Nombre:
+
+Doctorados:
+  Nombre:
+
+Ofertas:
+  Oferta:
+
+
+Algunas de estas tablas tendrían más columnas, para enlazar unas con otras.
+Además de las relaciones entre las tablas, surgirían más tablas:
+
+
+Universidades_Rel_Doctorados:
+  Universidad:
+  Doctorado:
+
+Universidades_Rel_Titulaciones_Universitarias:
+  Universidad:
+  Titulacion_Universitaria:
+
+Universidades_Rel_Masters:
+  Universidad:
+  Master:
+
+Personas_Rel_Universidades_Rel_Titulaciones_Universitarias:
+  Id_Persona:
+  Universidad:
+  Titulacion_Universitaria:
+  Año_titulacion_universitaria
+
+Personas_Rel_Titulaciones_Complementarias:
+  Id_Persona:
+  Titulacion_Complementaria:
+
+Personas_Rel_Doctorados:
+  Id_Persona:
+  Doctorado:
+
+Personas_Rel_Masters:
+  Id_Persona:
+  Master:
+
+
+Lo primero que pasa es que para que pudierais trabajar con la nueva aplicación web, sería necesario trasladar los datos del Access a la nueva base de datos.
+Eso sería otro programa que habría que hacer.
+
+Habría que analizar los campos de texto, como por ejemplo, el de master detallado, y tratar de separar los distintos masters que pueden figurar, en registros individuales en la tabla de masters. 
+El problema que hay es que están en un párrafo en lenguaje natural, por ejemplo: Coach certificada... en lugar de los nombres de las titulaciones.
+
+La otra opción sería introducir los datos a mano, pero como supongo que habrá un montón de registros sería inviable.
+
+Por otra parte cuanto más fragmentados estén los datos, más complicado es introducirlos en la nueva base de datos, y hay que hacer más consultas y más complicadas para recopilarlos.
+
+Además, en principio vosotros no estaríais interesados en dar de alta universidades, titulaciones y demás por separado.
+Solamente estaríais interesados en las personas.
+
+Así que el diseño de los datos se podría quedar en una sola tabla tal como está.
+
+
+Y lo que se podría hacer es consultas que muestren tablas con la información parcial relevante a la consulta. 
+Desde una consulta de buscar persona por nombre y apellidos se podrían eliminar personas.
+Y hacer también un formulario que agrupase visualmente los datos en varios apartados para poder introducir nuevos datos, y editar alumnos y modificarlos.
+
+
+Lo que pasa es que es una aplicación web más grande y más complicada que la del Raw Data, que llevó además más avanzada, y para el tiempo que me queda, que son 6 días, preferiría tratar de hacer algo más con ella para ver si puedo llegar a algo más tangible, si es que soy capaz, en lugar de quedarme a medias con las dos.
+
+No obstante, lo que me digáis, por supuesto.
+Gracias.
+Un saludo.
